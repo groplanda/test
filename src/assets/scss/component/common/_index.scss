@@ -1,0 +1,33 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+
+    @include md {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+
+    @include full {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.container {
+    width: 100%;
+}
+
+.icon {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+    color: inherit;
+}

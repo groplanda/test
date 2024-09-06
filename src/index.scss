@@ -1,0 +1,88 @@
+@import './assets/scss/fonts.scss';
+@import './assets/scss/vars.scss';
+@import './assets/scss/mixins.scss';
+@import './assets/scss/keyframes.scss';
+@import './assets/css/reset.css';
+
+body {
+    color: $text-color;
+    font-family: $main-font;
+    font-size: $text-sm;
+    line-height: $leading-sm;
+    min-width: 320px;
+    font-weight: 500;
+    background: $white-color;
+    -webkit-text-decoration-skip-ink: none;
+    text-decoration-skip-ink: none;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+  
+    &.open-modal {
+      overflow: hidden;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: $rose-color;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+input, button, select, textarea {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0;
+    font-family: $main-font;
+    font-size: $text-sm;
+    line-height: $leading-sm;
+    font-weight: 500;
+    background: none;
+    border: none;
+    border-radius: 0;
+    outline: none;
+    transition: all .3s ease;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    &:hover, &:focus {
+      outline: none;
+      cursor: pointer;
+    }
+}
+  
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+@import './assets/scss/component/layout/index';
+@import './assets/scss/component/button/index';
+@import './assets/scss/component/controls/index';
+@import './assets/scss/component/header/index';
+@import './assets/scss/component/mobile-menu/index';
+@import './assets/scss/component/hero/index';
+@import './assets/scss/component/advantages/index';
+@import './assets/scss/component/faq/index';
+@import './assets/scss/component/callback/index';
+@import './assets/scss/component/posts/index';
+@import './assets/scss/component/bg/index';
+@import './assets/scss/component/reviews/index';
+@import './assets/scss/component/events/index';
+@import './assets/scss/component/footer/index';
+@import './assets/scss/component/modal/index';
+@import './assets/scss/component/form/index';
+@import './assets/css/animate.min.css';

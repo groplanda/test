@@ -1,0 +1,73 @@
+@mixin xs() {
+  @media (min-width: $breakpoint_xs) {
+      @content;
+  }
+}
+
+@mixin sm() {
+    @media (min-width: $breakpoint_sm) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media (min-width: $breakpoint_md) {
+        @content;
+    }
+}
+
+@mixin lg() {
+    @media (min-width: $breakpoint_lg) {
+        @content;
+    }
+}
+
+@mixin xl() {
+    @media (min-width: $breakpoint_xl) {
+        @content;
+    }
+}
+
+@mixin full() {
+    @media (min-width: $breakpoint_full) {
+        @content;
+    }
+}
+
+@mixin breakpoint($min, $max: null) {
+    @if $max {
+      @media (min-width: $min) and (max-width: $max) {
+        @content;
+      }
+    }
+    @else {
+      @media (min-width: $min) {
+        @content;
+      }
+    }
+}
+
+@mixin max-width($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin placeholder($color) {
+    &::-moz-placeholder {
+      color: $color;
+      opacity: 1;
+    }
+    &::-webkit-input-placeholder {
+      color: $color;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      color: $color;
+      opacity: 1;
+    }
+    &::placeholder {
+      color: $color;
+      opacity: 1;
+    }
+}
