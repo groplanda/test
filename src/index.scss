@@ -5,13 +5,13 @@
 @import './assets/css/reset.css';
 
 body {
-    color: $text-color;
+    color: $white-color;
     font-family: $main-font;
-    font-size: $text-sm;
-    line-height: $leading-sm;
+    font-size: $text-size;
+    line-height: $leading-size;
     min-width: 320px;
     font-weight: 500;
-    background: $white-color;
+    background: $dark-color;
     -webkit-text-decoration-skip-ink: none;
     text-decoration-skip-ink: none;
     text-rendering: geometricPrecision;
@@ -31,7 +31,7 @@ img {
 }
 
 a {
-    color: $rose-color;
+    color: $white-color;
     text-decoration: none;
 
     &:hover {
@@ -45,8 +45,8 @@ input, button, select, textarea {
     padding: 0;
     margin: 0;
     font-family: $main-font;
-    font-size: $text-sm;
-    line-height: $leading-sm;
+    font-size: $text-size;
+    line-height: $leading-size;
     font-weight: 500;
     background: none;
     border: none;
@@ -69,20 +69,8 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-@import './assets/scss/component/layout/index';
-@import './assets/scss/component/button/index';
-@import './assets/scss/component/controls/index';
-@import './assets/scss/component/header/index';
-@import './assets/scss/component/mobile-menu/index';
-@import './assets/scss/component/hero/index';
-@import './assets/scss/component/advantages/index';
-@import './assets/scss/component/faq/index';
-@import './assets/scss/component/callback/index';
-@import './assets/scss/component/posts/index';
-@import './assets/scss/component/bg/index';
-@import './assets/scss/component/reviews/index';
-@import './assets/scss/component/events/index';
-@import './assets/scss/component/footer/index';
-@import './assets/scss/component/modal/index';
-@import './assets/scss/component/form/index';
-@import './assets/css/animate.min.css';
+@import './assets/scss/component/common';
+@import './assets/scss/component/header';
+@import './assets/scss/component/hero';
+@import './assets/scss/component/modal';
+@import './assets/scss/component/form';

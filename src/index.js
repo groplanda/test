@@ -1,29 +1,11 @@
 import './index.scss';
-import { header } from './assets/js/header';
-import WOW from 'wowjs';
-import { faq, hero, phoneMask, points, reviews, tabs } from './assets/js/base';
 import MicroModal from 'micromodal';
-import contactForm from './assets/js/plugins/ContactForm';
+import contactForm from './assets/js/contactForm';
+import Inputmask from 'inputmask';
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    header();
-
-    points();
-
-    hero();
-
-    faq();
-
-    tabs();
-
-    reviews();
-
-    new WOW.WOW().init();
-
     window.MicroModal = MicroModal.init({
-        onShow: modal => console.info(`${modal.id} is shown`),
-        onClose: modal => console.info(`${modal.id} is hidden`),
         openTrigger: 'data-modal-open',
         openClass: 'active',
         disableScroll: true,
@@ -33,7 +15,21 @@ document.addEventListener('DOMContentLoaded', function() {
         debugMode: true
     });
 
+
     contactForm();
-    
+
     phoneMask();
+
+    function phoneMask() {
+        const phones = document.querySelectorAll('[data-mask="phone"]');
+        
+        const im = new Inputmask("+7 (999) 999-99-99", {
+            showMaskOnHover: false,
+        });
+    
+        phones.forEach((phone) => {
+            im.mask(phone);
+        });
+    }
+
 });

@@ -1,0 +1,16 @@
+.DS_Store
+.idea
+.env
+
+
+# Editor ignores
+nbproject
+.idea
+.vscode
+_ide_helper.php
+
+# Other ignores
+.DS_Store
+package-lock.json
+/node_modules
+/dist

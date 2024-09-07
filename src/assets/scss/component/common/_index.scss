@@ -31,3 +31,89 @@
     height: 100%;
     color: inherit;
 }
+
+.font-title {
+    font-family: $title-font;
+}
+
+.button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 52px;
+    background-color: $button-color;
+    border: 1px solid $button-color;
+    font-family: $title-font;
+    color: $white-color;
+    font-size: 16px;
+    line-height: 20px;
+    transition: background-color .3s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $button-color-hover;
+    }
+
+    &:active {
+        background-color: $button-color-active;
+    }
+
+    &:disabled,
+    [disabled] {
+        pointer-events: none;
+        cursor: default;
+    }
+
+    &--primary {
+        max-width: 320px;
+        padding-left: 23px;
+        padding-right: 19px;
+        border-radius: 16px;
+        justify-content: space-between;
+    }
+
+    &--submit {
+        border-radius: 8px;
+        max-width: 100%;
+        justify-content: center;
+        
+        @include sm {
+            height: 60px;
+        }
+    }
+
+    &__arrow {
+        width: 24px;
+        height: 16px;
+        color: inherit;
+    }
+}
+
+.micromodal-slide {
+    display: none;
+}
+  
+.micromodal-slide.active {
+    display: block;
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__dialog {
+    animation: mmfadeIn .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="false"] .modal__content {
+    animation: mmslideIn .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__dialog {
+    animation: mmfadeOut .3s cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.micromodal-slide[aria-hidden="true"] .modal__content {
+    animation: mmslideOut .3s cubic-bezier(0, 0, .2, 1);
+}
+
+.micromodal-slide .modal__content,
+.micromodal-slide .modal__dialog {
+    will-change: transform;
+}

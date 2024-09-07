@@ -1,39 +1,43 @@
 @font-face {
-    font-family: 'Muller';
-    src: local('Muller Regular'), local('Muller-Regular'),
-        url('./assets/fonts/Muller/MullerRegular.woff2') format('woff2'),
-        url('./assets/fonts/Muller/MullerRegular.woff') format('woff'),
-        url('./assets/fonts/Muller/MullerRegular.ttf') format('truetype');
+    font-family: 'Suisse Intl';
+    src: local('Suisse Intl Regular'), local('Suisse Intl-Regular'),
+        url('./assets/fonts/SuisseIntl/SuisseIntl-Regular.otf') format('opentype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Muller';
-    src: local('Muller Medium'), local('Muller-Medium'),
-        url('./assets/fonts/Muller/MullerMedium.woff2') format('woff2'),
-        url('./assets/fonts/Muller/MullerMedium.woff') format('woff'),
-        url('./assets/fonts/Muller/MullerMedium.ttf') format('truetype');
+    font-family: 'Suisse Intl';
+    src: local('Suisse Intl SemiBold'), local('Suisse Intl-SemiBold'),
+        url('./assets/fonts/SuisseIntl/SuisseIntl-SemiBold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: local('Unbounded Medium'), local('Unbounded-Medium'),
+        url('./assets/fonts/Unbounded/Unbounded-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Unbounded/Unbounded-Medium.woff') format('woff'),
+        url('./assets/fonts/Unbounded/Unbounded-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Muller';
-    src: local('Muller Bold'), local('Muller-Bold'),
-        url('./assets/fonts/Muller/MullerBold.woff2') format('woff2'),
-        url('./assets/fonts/Muller/MullerBold.woff') format('woff'),
-        url('./assets/fonts/Muller/MullerBold.ttf') format('truetype');
-    font-weight: 700;
+    font-family: 'Unbounded';
+    src: local('Unbounded SemiBold'), local('Unbounded-SemiBold'),
+        url('./assets/fonts/Unbounded/Unbounded-SemiBold.ttf') format('truetype');
+    font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Muller';
-    src: local('Muller Extra Bold'), local('Muller-Extra-Bold'),
-        url('./assets/fonts/Muller/MullerExtraBold.woff2') format('woff2'),
-        url('./assets/fonts/Muller/MullerExtraBold.woff') format('woff'),
-        url('./assets/fonts/Muller/MullerExtraBold.ttf') format('truetype');
-    font-weight: 800;
+    font-family: 'Unbounded';
+    src: local('Unbounded Black'), local('Unbounded-Black'),
+        url('./assets/fonts/Unbounded/Unbounded-Black.woff2') format('woff2'),
+        url('./assets/fonts/Unbounded/Unbounded-Black.woff') format('woff'),
+        url('./assets/fonts/Unbounded/Unbounded-Black.ttf') format('truetype');
+    font-weight: 900;
     font-style: normal;
 }
