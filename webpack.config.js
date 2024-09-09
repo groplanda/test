@@ -39,8 +39,8 @@ const plugins = () => {
         new SVGSpritemapPlugin('./src/assets/icons/*.svg'),
         new HtmlWebpackPlugin({
             hash: true,
-            title: 'Главный врач клиники Дочки Матери, врач-гинеколог, акушер и специалист по УЗИ.',
-            metaDesc: 'Главный врач клиники Дочки Матери, врач-гинеколог, акушер и специалист по УЗИ.',
+            title: 'Roistat Test',
+            metaDesc: 'Roistat Test',
             template: './src/index.html',
             filename: 'index.html',
             inject: 'body'
